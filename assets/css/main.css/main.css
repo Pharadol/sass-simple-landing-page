@@ -1,6 +1,12 @@
+.user-icon {
+  color: #d360b6; }
+
+.heart-icon {
+  color: red; }
+
 h1 {
-  color: #db4242; }
+  color: #790808; }
 
 p {
-  color: #b49d28;
+  color: #28b49d;
   font-size: 12px; }
