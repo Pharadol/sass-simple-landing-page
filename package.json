@@ -5,10 +5,10 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "npm-run-all -p sass:watch serve",
-    "sass": "echo 'Compiling Sass...' && node-sass assets/sass/main.scss assets/css/main.css",
-    "sass:watch": "echo 'Watching for Sass changes...' && onchange 'assets/sass/main.scss' -- npm run sass",
-    "serve": "echo 'Starting BrowserSync...' && browser-sync start --server --files 'assets/css/*.css, *.html'"
+    "scss": "node-sass -o assets/css assets/sass",
+    "serve": "browser-sync start --server --files 'assets/css/*.css, *html'",
+    "watch:css": "onchange 'assets/sass' -- npm run scss",
+    "start": "run-p serve watch:css"
   },
   "keywords": [],
   "author": "",
