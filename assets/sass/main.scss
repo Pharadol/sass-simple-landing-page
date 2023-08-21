@@ -1,13 +1,15 @@
-.user-icon {
-  color: #d360b6;
-}
-.heart-icon {
-  color: red;
-}
-h1 {
-  color: rgb(121, 8, 8);
-}
-p {
-  color: rgb(40, 180, 157);
-  font-size: 12px;
-}
+//Base
+@import "./base/base.scss";
+
+// Variables
+@import "./abstract/variables";
+
+//Layout
+@import "./layout/container";
+
+// Components
+@import "./components/nav";
+@import "./components/banner";
+@import "./components/services";
+@import "./components/content";
+@import "./components/footer";

@@ -1,0 +1,15 @@
+.content {
+    min-height: 350px;
+    background-color: rgb(233, 233, 233);
+    .container {
+      h3 {
+        font-size: 2rem;
+        color: rgb(97, 190, 226);
+        padding: 1.5rem;
+      }
+      p {
+        padding: 0 1.5rem;
+        color: gray;
+      }
+    }
+  }

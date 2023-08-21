@@ -1,0 +1,43 @@
+.services {
+  height: 400px;
+
+  .services-con {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: 400px;
+    grid-gap: 1rem;
+
+    .services-items {
+      align-self: center;
+      padding: 1.5rem;
+
+      .icon-wrapper {
+        border-radius: 50%;
+        background-color: rgb(97, 190, 226);
+        height: 4rem;
+        width: 4rem;
+        margin: 0 auto 5px auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        i {
+          color: $white;
+        }
+      }
+
+      h3 {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+        color: rgb(97, 190, 226);
+        text-align: center;
+      }
+
+      p {
+        text-align: justify;
+        font-size: 1rem;
+        color: rgb(59, 59, 59);
+        width: auto;
+      }
+    }
+  }
+}

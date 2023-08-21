@@ -1,12 +1,231 @@
-.user-icon {
-  color: #d360b6; }
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  font-family: "Lato", sans-serif; }
 
-.heart-icon {
-  color: red; }
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block; }
 
-h1 {
-  color: #790808; }
+body {
+  line-height: 1;
+  margin: 0; }
 
-p {
-  color: #28b49d;
-  font-size: 12px; }
+ol,
+ul {
+  list-style: none; }
+
+blockquote,
+q {
+  quotes: none; }
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+.container {
+  max-width: 960px;
+  margin: 0 auto; }
+
+nav {
+  background-color: #fff;
+  height: 50px;
+  border-bottom: 2px solid #333; }
+  nav .nav-con {
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+    align-items: center; }
+    nav .nav-con .logo a {
+      text-decoration: none;
+      color: #333;
+      font-size: 1.5rem; }
+    nav .nav-con .menu {
+      display: flex; }
+      nav .nav-con .menu li {
+        padding: 1rem;
+        transition: all 0.3s ease-in-out;
+        cursor: pointer; }
+        nav .nav-con .menu li a {
+          text-decoration: none;
+          color: #333;
+          height: auto;
+          width: auto; }
+        nav .nav-con .menu li:hover {
+          background-color: rgba(48, 48, 48, 0.829);
+          color: #fff; }
+
+.banner {
+  height: 450px;
+  background: url("https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.5)), url("https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80");
+  background-size: cover;
+  background-position: center; }
+  .banner .banner-con {
+    height: 450px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #fff; }
+    .banner .banner-con .banner-text h1 {
+      font-size: 4.5rem;
+      margin-bottom: 1.5rem;
+      z-index: 5; }
+    .banner .banner-con .banner-text p {
+      line-height: 20px; }
+
+.services {
+  height: 400px; }
+  .services .services-con {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: 400px;
+    grid-gap: 1rem; }
+    .services .services-con .services-items {
+      align-self: center;
+      padding: 1.5rem; }
+      .services .services-con .services-items .icon-wrapper {
+        border-radius: 50%;
+        background-color: #61bee2;
+        height: 4rem;
+        width: 4rem;
+        margin: 0 auto 5px auto;
+        display: flex;
+        justify-content: center;
+        align-items: center; }
+        .services .services-con .services-items .icon-wrapper i {
+          color: #fff; }
+      .services .services-con .services-items h3 {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+        color: #61bee2;
+        text-align: center; }
+      .services .services-con .services-items p {
+        text-align: justify;
+        font-size: 1rem;
+        color: #3b3b3b;
+        width: auto; }
+
+.content {
+  min-height: 350px;
+  background-color: #e9e9e9; }
+  .content .container h3 {
+    font-size: 2rem;
+    color: #61bee2;
+    padding: 1.5rem; }
+  .content .container p {
+    padding: 0 1.5rem;
+    color: gray; }
+
+footer {
+  padding: 1rem;
+  background: #333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff; }
