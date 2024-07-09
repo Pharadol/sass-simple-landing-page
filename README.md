@@ -3,7 +3,7 @@
 This is a simple landing page created with HTML, Sass, and FontAwesome for a fictional company named SOFTGRAY.
 
 ## Demo
-You can see a live demo of the project [here](https://your-live-demo-link.com).
+You can see a live demo of the project [here](https://pharadol.github.io/sass-simple-landing-page/).
 
 ![Project Screenshot](https://img2.pic.in.th/pic/sass-simple-landing-page.png)
 
